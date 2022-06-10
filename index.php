@@ -49,3 +49,29 @@ function chargeAPI($api_url, $server_key, $request_body){
     return $result; 
     
 }
+
+?>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAzVGwrFZESf8buSezshzxEx3DA5GUp1iE",
+    authDomain: "dogwood-keep-352904.firebaseapp.com",
+    projectId: "dogwood-keep-352904",
+    storageBucket: "dogwood-keep-352904.appspot.com",
+    messagingSenderId: "940487574429",
+    appId: "1:940487574429:web:e565e311a27e559777a574",
+    measurementId: "G-MRBRTFJSCP"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
